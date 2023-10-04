@@ -1,0 +1,79 @@
+/* Reset CSS básico para zerar margens e preenchimentos */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos base para o layout */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Estilos para o cabeçalho/menu */
+.menu {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Estilos para o menu principal */
+.menu__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu__item {
+    margin: 0 20px;
+    position: relative;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Estilos para o conteúdo principal */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.main-content h2 {
+    margin-top: 0;
+}
+
+/* Estilos para o rodapé */
+.footer {
+    background-color: #ceccccbb;
+    color: #fff;
+    text-align: center;
+    padding: 2%;
+    width: 100%;
+}
+
+.gradient-background {
+    /* Linear Gradient */
+    background: linear-gradient(to right, #ac1616, #0445a5);
+
+    /* Radial Gradient (optional) */
+    /* background: radial-gradient(circle, #FF5733, #6B3E26); */
+
+    /* Add any other CSS properties you want for this class */
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
