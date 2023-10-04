@@ -64,7 +64,7 @@ body {
     width: 100%;
 }
 
-.gradient-background {
+.gradient-header {
     /* Linear Gradient */
     background: linear-gradient(to right, #ac1616, #0445a5);
 
@@ -76,4 +76,9 @@ body {
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+.gradient-header .menu-list{
+    text-decoration: none;
+    color: white;
 }
