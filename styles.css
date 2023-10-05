@@ -76,9 +76,13 @@ body {
     color: white;
     text-align: center;
     padding: 20px;
+    display: flex;
 }
 
 .gradient-header .menu-list{
     text-decoration: none;
-    color: white;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80vh;
 }
