@@ -1,24 +1,17 @@
 /* Reset CSS básico para zerar margens e preenchimentos */
-body, h1, h2, p, ul, li {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Estilos base para o layout */
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #F4F4F4;
 }
 
-.container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-/* Estilos para o cabeçalho/menu */
+/* Estilos para o menu */
 .menu {
     background-color: #333;
     color: #fff;
@@ -27,42 +20,7 @@ body {
     width: 100%;
 }
 
-/* Estilos para o menu principal */
-.menu__list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-.menu__item {
-    margin: 0 20px;
-    position: relative;
-}
-
-.menu__link {
-    text-decoration: none;
-    color: #fff;
-}
-
-
-/* Estilos para o conteúdo principal */
-.main-content {
-    flex-grow: 1;
-    padding: 20px;
-}
-
-.main-content h2 {
-    margin-top: 0;
-}
-
-/* Estilos para o rodapé */
-.footer {
-    background-color: #ceccccbb;
-    color: #fff;
-    text-align: center;
-    padding: 2%;
-    width: 100%;
-}
+/* Estilos para header */
 
 .gradient-header {
     /* Linear Gradient */
@@ -70,20 +28,77 @@ body {
 
     /* Radial Gradient (optional) */
     /* background: radial-gradient(circle, #FF5733, #6B3E26); */
-
-    /* Add any other CSS properties you want for this class */
-    background-position: center;
+    max-width: 100%;
     color: white;
     text-align: center;
+    justify-content: center;
     padding: 20px;
     display: flex;
 }
 
-.gradient-header .menu-list{
-    text-decoration: none;
-    color: #fff;
+.logo {
+    max-width: 200px;
+    height: auto;
+    left: 20px;
+    position: relative;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.header-content {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 80vh;
+    max-width: 100vh;
+    padding-left: 100px;
 }
-a
+
+.header-content lu{
+    position: relative;
+    display: flex; 
+}
+
+.header-content lu li{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.header-content lu li a{
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button-hover {
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.button-hover:hover {
+    background-color: #7980853b;
+}
+
+/* Estilos para o conteúdo principal */
+
+
+/* Estilos para o rodapé */
+.footer {
+    color: #fff;
+    text-align: center;
+    padding: 2%;
+    width: 100%;
+}
